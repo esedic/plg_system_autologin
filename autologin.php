@@ -162,7 +162,7 @@ class PlgSystemAutoLogin extends JPlugin
 		if ($this->params->get('cookie') == 1)
 		{
 			$cookie = $this->app->input->cookie;
-			$cookie->set('autologinip', 1, 0);
+			$cookie->set('autologin', 1, 0);
 		}
 
 		// Redirect if needed
@@ -208,7 +208,7 @@ class PlgSystemAutoLogin extends JPlugin
 		}
 
 		// Check for the cookie
-		if ($this->params->get('cookie') == 1 && $this->app->input->cookie->get('autologinip') == 1)
+		if ($this->params->get('cookie') == 1 && $this->app->input->cookie->get('autologin') == 1)
 		{
 			return false;
 		}
