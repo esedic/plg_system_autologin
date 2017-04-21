@@ -14,49 +14,49 @@
 		<filename plugin="autologin">autologin.php</filename>
 	</files>
 
-	<languages>
-		<language tag="en-GB">en-GB.plg_system_autologin.ini</language>
-		<language tag="en-GB">en-GB.plg_system_autologin.sys.ini</language>
-	</languages>
+    <languages>
+        <language tag="en-GB">en-GB.plg_system_autologin.ini</language>
+        <language tag="en-GB">en-GB.plg_system_autologin.sys.ini</language>
+    </languages>
 
-	<config>
-		<fields name="params">
-			<fieldset name="basic">
-				<field
-					name="userid"
-					type="user"
-					default=""
-					label="PLG_SYSTEM_AUTOLOGIN_FIELD_USERID"
-					description="PLG_SYSTEM_AUTOLOGIN_FIELD_USERID_DESC"
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="userid" 
+					type="user" 
+					default="" 
+					label="PLG_SYSTEM_AUTOLOGIN_FIELD_USERID" 
+					description="PLG_SYSTEM_AUTOLOGIN_FIELD_USERID_DESC" 
 				/>
-				<field
-					name="redirect"
-					type="menuitem"
-					default=""
-					label="PLG_SYSTEM_AUTOLOGIN_FIELD_REDIRECT"
+                <field
+                    name="redirect" 
+					type="menuitem" 
+					default="" 
+					label="PLG_SYSTEM_AUTOLOGIN_FIELD_REDIRECT" 
 					description="PLG_SYSTEM_AUTOLOGIN_FIELD_REDIRECT_DESC">
-						<option value="">JNONE</option>
-				</field>
-				<field
-					name="application"
-					type="list"
-					default=""
-					label="PLG_SYSTEM_AUTOLOGIN_FIELD_APPLICATION"					
-					description="PLG_SYSTEM_AUTOLOGIN_FIELD_APPLICATION_DESC">
-						<option value="site">PLG_SYSTEM_AUTOLOGIN_FIELD_APPLICATION_OPTION_SITE</option>
-						<option value="administrator">PLG_SYSTEM_AUTOLOGIN_FIELD_APPLICATION_OPTION_ADMIN</option>
-						<option value="all">PLG_SYSTEM_AUTOLOGIN_FIELD_APPLICATION_OPTION_ALL</option>
-				</field>
-				<field
-					name="cookie"
-					type="list"
-					default="1"
+                        <option value="">JNONE</option>
+                </field>
+                <field
+                    name="application" 
+					type="list" 
+					default="" 
+					label="PLG_SYSTEM_AUTOLOGIN_FIELD_APPLICATION" 
+                    description="PLG_SYSTEM_AUTOLOGIN_FIELD_APPLICATION_DESC">
+                        <option value="site">PLG_SYSTEM_AUTOLOGIN_FIELD_APPLICATION_OPTION_SITE</option>
+                        <option value="administrator">PLG_SYSTEM_AUTOLOGIN_FIELD_APPLICATION_OPTION_ADMIN</option>
+                        <option value="all">PLG_SYSTEM_AUTOLOGIN_FIELD_APPLICATION_OPTION_ALL</option>
+                </field>
+                <field
+                    name="cookie" 
+					type="list" 
+					default="1" 
 					label="PLG_SYSTEM_AUTOLOGIN_FIELD_COOKIE"
-					description="PLG_SYSTEM_AUTOLOGIN_FIELD_COOKIE_DESC">
-						<option value="0">JNO</option>
-						<option value="1">JYES</option>
-				</field>
-			</fieldset>
-		</fields>
-	</config>
+                    description="PLG_SYSTEM_AUTOLOGIN_FIELD_COOKIE_DESC">
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
 </extension>
